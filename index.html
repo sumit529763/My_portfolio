@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio - Sumit Naik</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style3.css">
+    <!-- <link rel="stylesheet" href="style3.css" /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -14,18 +17,24 @@
     />
   </head>
   <body>
-    <div class="nav">
-      <div class="navbar">
-        <b>Portfolio.</b>
-        <div class="links">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Service</a>
-          <a href="#">Contact</a>
+    <!-- Navigation Bar -->
+    <header class="nav">
+      <nav class="navbar">
+        <div class="logos">
+          <img src="logo.webp" alt="img" height="40px" width="40px" />
+          <b>Portfolio.</b>
         </div>
-      </div>
-    </div>
-    <div class="con">
+        <div class="links">
+          <a href="#home">Home</a>
+          <a href="#my_about">About</a>
+          <a href="#services">Service</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Animated Bars -->
+    <div class="bars">
       <div class="bar" style="--i: 1"></div>
       <div class="bar" style="--i: 2"></div>
       <div class="bar" style="--i: 3"></div>
@@ -36,41 +45,109 @@
       <div class="bar" style="--i: 8"></div>
       <div class="bar" style="--i: 9"></div>
     </div>
-    <div class="my_about">
-      <h2>Sumit Naik</h2>
-      <hr />
-      <h3>I'm a Student</h3>
-      <p>
-        Hello! I’m Sumit naik , a passionate Bachelor of Computer Applications
-        (BCA) student with a keen interest in web development, programming, and
-        UI/UX design. I love bringing ideas to life through clean and
-        interactive code, and I’m always eager to learn new technologies.
-      </p>
-      <div class="logo">
-        <div class="btn">
-          <a href="#">Download CV</a>
-          <a href="#">Download Resume</a>
+
+    <div class="content_box">
+      <div class="display" id="display">
+        <div id="home" class="contain-page">
+          <div class="home-content">
+            <h1>Welcome to My Portfolio</h1>
+            <br />
+            <p>
+              Hi, I’m [Your Name], a BCA student passionate about web
+              development, UI/UX design, and animation. I create visually
+              stunning, interactive, and user-friendly experiences using modern
+              web technologies.
+            </p>
+            <p>✨ Let’s Build Something Amazing Together!</p>
+            <a href="#my_about" class="btn">Learn More</a>
+          </div>
         </div>
-        <div class="links">
-          <a href="https://www.facebook.com/profile.php?id=100051440592382"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/sumit-naik23/"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a href="https://www.instagram.com/techie.lifes_umit/"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+
+        <div id="my_about" class="contain-page">
+          <h2>Sumit Naik</h2>
+          <hr />
+          <h3>I'm a Student</h3>
+          <p>
+            Hello! I’m Sumit Naik, a passionate Bachelor of Computer
+            Applications (BCA) student with a keen interest in web development,
+            programming, and UI/UX design.
+          </p>
+          <div class="logo">
+            <div class="btn">
+              <a href="#">Download CV</a>
+              <a href="#">Download Resume</a>
+            </div>
+            <div class="links">
+              <a
+                href="https://www.facebook.com/profile.php?id=100051440592382"
+                title="Facebook"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/sumit-naik23/"
+                title="LinkedIn"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/techie.lifes_umit/"
+                title="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://github.com/" title="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="services" class="contain-page">
+          <h2>My Services</h2>
+          <hr />
+          <div class="service-cards">
+            <div class="service">
+              <i class="fa-solid fa-code"></i>
+              <h3>Web Development</h3>
+              <p>I create modern, responsive, and high-performance websites.</p>
+            </div>
+            <div class="service">
+              <i class="fa-solid fa-paint-brush"></i>
+              <h3>UI/UX Design</h3>
+              <p>Designing clean, intuitive, and engaging user interfaces.</p>
+            </div>
+            <div class="service">
+              <i class="fa-solid fa-mobile"></i>
+              <h3>Mobile App Development</h3>
+              <p>Building smooth and interactive mobile applications.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="contact" class="contain-page">
+          <div class="cn">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me for collaborations or inquiries.</p>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="main_img_box">
+        <div class="img_container">
+          <div class="img-box">
+            <div class="box">
+              <a href="#home"><img src="img3.png" alt="Profile Image" /></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="img_container">
-      <div class="img-box">
-        <div class="box">
-          <img src="img3.png" alt="Image" />
-        </div>
-      </div>
-    </div>
+    <footer>
+      <!-- <hr /> -->
+    </footer>
   </body>
 </html>
