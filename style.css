@@ -112,6 +112,9 @@ body {
   align-items: center;
 }
 .img_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 250px;
   height: 250px;
   animation: aa 5s ease-in-out;

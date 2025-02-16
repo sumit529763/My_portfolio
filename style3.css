@@ -37,7 +37,7 @@
     margin: 0;
     font-size: small;
     width: 90%;
-    height: 50%;
+    height: 40%;
   }
   #my_about {
     font-size: small;
@@ -63,8 +63,8 @@
     margin: 0;
   }
   .img_container {
-    width: 200px;
-    height: 200px;
+    width: 60%;
+    height: 90%;
     animation: aa 5s ease-in-out;
   }
   .img-box {
