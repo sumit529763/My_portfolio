@@ -73,6 +73,10 @@
     overflow: hidden;
     animation: a 4s ease-in-out infinite;
   }
+  .profile-img {
+    width: 80%; /* Resize image */
+    margin: auto;
+  }
 
   .box {
     width: 150px;
