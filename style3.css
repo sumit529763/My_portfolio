@@ -37,7 +37,7 @@
     margin: 0;
     font-size: small;
     width: 90%;
-    height: 40%;
+    height: 50%;
   }
   #my_about {
     font-size: small;
@@ -59,7 +59,7 @@
   }
   .main_img_box {
     width: 100%;
-    height: 50%;
+    height: 40%;
     margin: 0;
   }
   .img_container {
@@ -85,11 +85,11 @@
 
   #contact {
     width: 100%;
-    padding: 20px 10px;
+    height: fit-content;
+    /* padding: 20px 10px; */
   }
   .cn h2 {
-    /* all: unset; */
-    font-size: 15px;
+    font-size: 20px;
   }
   .cn p {
     display: none;
