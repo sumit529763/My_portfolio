@@ -49,6 +49,11 @@ html,body {
   display: flex;
   gap: 30px;
 }
+.nav .logos img{
+  mix-blend-mode:multiply;
+  background-color: #fff;
+  border-radius: 50% 0px;
+}
 .navbar .links a {
   font-size: 1.5rem;
   width: 100px;
