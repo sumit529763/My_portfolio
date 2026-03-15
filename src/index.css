@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* Refined v4 Theme with softer text colors */
+@theme {
+  --color-darkBg: #050505;
+  --color-glass: rgba(255, 255, 255, 0.03);
+  --color-glassBorder: rgba(255, 255, 255, 0.08);
+  --color-accent: #0ea5e9;
+  /* Softer text colors */
+  --color-textMain: #f1f5f9;  /* Soft light gray for body */
+  --color-textSub: #94a3b8;   /* Subtle gray for subtitles and descriptors */
+}
+
+@layer base {
+  body {
+    /* Updated body text color to textMain */
+    @apply bg-darkBg text-textMain overflow-x-hidden antialiased;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-glass backdrop-blur-md border border-glassBorder rounded-2xl;
+  }
+}
